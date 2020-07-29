@@ -278,12 +278,34 @@ section.app-video .play{
   }
 }
 
+@media (max-width: 992px){
+  h1{
+    font-size: 40px;
+  }
+  h2,h3,h4,h5{
+    font-size: 25px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 767px){
+  h1{
+    font-size: 40px;
+  }
+  h2,h3,h4,h5{
+    font-size: 25px;
+  }
+  p{
+    font-size: 14px;
+  }
   .banner-text-inner h1,p{
     text-align: center;
   }
-  .banner-image img{
-    margin: 0 auto;
+  .banner-image{
+    display: flex;
+    justify-content: center;
   }
   .banner-btn{
     display: flex;
@@ -298,6 +320,18 @@ section.app-video .play{
   }
   .single-counter p {
     margin-bottom: 20px;
+  }
+  .section-interact{   
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .section-interact-part2{   
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .theme-video-wrap {    
+    padding-top: 259px;
+    padding-bottom: 258px;
   }
 }
 
@@ -346,5 +380,9 @@ section.app-video .play{
   }  
   .section-interact-part2 h2,p{
     text-align: center; 
+  }
+  .theme-video-wrap {    
+    padding-top: 259px;
+    padding-bottom: 258px;
   }
 }
