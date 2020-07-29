@@ -27,3 +27,7 @@ $('.feature-carousel').owlCarousel({
     }
 })
 
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
