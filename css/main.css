@@ -283,6 +283,7 @@ section.app-video .play {
   margin: 0 auto;
   padding: 108px 70px;
   margin-top: 12px;
+  background-image: url(../img/mockup.png);
 }
 .app-carousel .owl-stage-outer {
   overflow: visible;
@@ -313,22 +314,6 @@ section.app-video .play {
   text-align: center;
   margin-top: 84px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1199px) {
   .header-menu ul li {
@@ -452,17 +437,30 @@ section.app-video .play {
   .theme-video-wrap {
     padding-top: 259px;
     padding-bottom: 258px;
-  } 
+  }
+  .app-scrin-inner {
+    margin-top: -30px;
+  }
   .app-carousel {
-    overflow: hidden;  
+    overflow: hidden;
   }
-
-  .app-scrin-inner{
-    margin: -72px 0 0 0;
+  .app-carousel-inner {
+    position: relative;
+    width: 350px;
+    height: 630px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    margin-top: 12px;
+    background-size: cover;
   }
-
-  .app-carousel-inner{
-    margin: 12px 27.5px 0 27.5px;
+  .app-carousel .owl-dots {
+    margin-top: 0;
+    margin-left: 18px;
   }
-  
+  .app-carousel .single-app-image img {
+    display: block;
+    width: 72%;
+    height: 95%;
+    margin: 100px 54px 90px 54px;
+  }
 }
