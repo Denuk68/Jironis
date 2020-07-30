@@ -1,5 +1,5 @@
+// Carousel
 $(".feature-carousel").owlCarousel({
-  pagination: true,
   loop: true,
   margin: 30,
   center: true,
@@ -25,13 +25,41 @@ $(".feature-carousel").owlCarousel({
   },
 });
 
-$(".counter").counterUp({
-  delay: 10,
-  time: 1000,
+// Сounter
+$(document).ready(function () {
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
 });
 
-var t = $(".video-btn");
-t.length &&
-  t.magnificPopup({
+// Video Popup
+
+$(document).ready(function () {
+  $(".video-btn").magnificPopup({
     type: "iframe",
   });
+});
+
+
+// App Carousel
+$('.app-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  center: true,
+  dots: true,
+  responsive: {
+      0: {
+          items: 1
+      },
+      575: {
+          items: 1
+      },
+      700: {
+          items: 1
+      },
+      1000: {
+          items: 1
+      }
+  }
+})
