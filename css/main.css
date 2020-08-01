@@ -152,11 +152,16 @@ p {
   color: #36324a;
   font-weight: 600;
 }
-.single-feature-inner {
-  padding: 24px 10px 66px;
-  border: 4px solid #5b39c9;
+.single-feature-inner {  
+  padding: 24px 10px 66px;    
+  height: 400px;  
+}
+.active-single-feature-inner{  
+  border: 4px solid #5b39c9; 
+  padding: 0;   
   border-radius: 10px;
-  height: 400px;
+  height: 400px; 
+  color: #f77ade;
 }
 .single-feature-inner i {
   margin: 30px 0;
@@ -903,11 +908,15 @@ section.app-video .play {
   p {
     font-size: 14px;
   }
+  .main-header{
+    padding: 10px 0;
+  }
   .banner {
-    margin-top: 10px;
+    padding: 10px 0;
   }
   .banner-text-inner h1 {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 40px;
   }
   .btn-rose {
@@ -920,6 +929,9 @@ section.app-video .play {
   }
   .banner button {
     margin-right: 0;
+  }
+  .section-features{
+    margin: 10px 0;
   }
   .single-counter p {
     margin-bottom: 25px;
@@ -941,6 +953,21 @@ section.app-video .play {
   .theme-video-wrap {
     padding-top: 259px;
     padding-bottom: 258px;
+  }
+  .section-app{   
+    margin: 10px 0;
+  }
+  .section-app h2,p{
+    margin: 0;
+  }
+  .section-pricing{
+    margin: 20px 0;
+  }
+  .section-pricing h2{
+    margin: 10px;
+  }
+  .section-pricing p{
+    margin-bottom: 20px;
   }
   .app-scrin-inner {
     margin-top: -30px;
@@ -968,8 +995,8 @@ section.app-video .play {
     margin: 100px 54px 90px 54px;
   }
   .Section-author-carousel {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:0;
+    padding: 50px 0;
   }
   .single-author-comment h4 {
     font-size: 12px;
@@ -980,6 +1007,9 @@ section.app-video .play {
     max-width: 326px;
     margin: 0 auto;
     overflow: hidden !important;
+    padding-bottom: 20px;
+  }
+  .testimonial-author-inner{
     padding-bottom: 20px;
   }
   .Section-blog {
@@ -1008,6 +1038,9 @@ section.app-video .play {
     font-size: 15px;
     margin: 0;
   }
+  .Section-download-app{
+    padding: 20px;
+  }
   .download-app-inner h2 {
     line-height: 40px;
     margin-bottom: 5px;
@@ -1026,4 +1059,22 @@ section.app-video .play {
     padding: 9px 5px;
     font-size: 14px;
   }
+  .footer-top{
+    padding:20px ;   
+  }
+  .footer-top h5{
+    margin-bottom: 15px;
+  }
+  .footer-top .extra-link{
+    padding: 0  40px ;
+  }
+  .footer-top .address-list{
+    padding: 0  40px ;
+  }
+  .footer-bottom{
+    padding: 15px 0;
+  }
+  .footer-widget .footer-logo {
+    margin-bottom: 20px;
+}
 }
