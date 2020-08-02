@@ -152,3 +152,5 @@ $(".partner-carousel").owlCarousel({
     },
   },
 });
+
+
