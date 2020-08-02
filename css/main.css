@@ -83,6 +83,41 @@ p {
   border-color: #36324a;
   transition: linear 0.2s;
 }
+/* Modal */
+#myModal {
+  width: 50%; height: 400px;
+  min-width: 250px;
+  padding: 18px 9px;
+  border-radius: 4px;
+  background: #fafafa;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+}
+#myModal button{
+  margin-top: 30px;
+}
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  font-size: 29px;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+}
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+  display: none;
+}
 
 /* Header */
 .main-header {
@@ -108,7 +143,7 @@ p {
   color: #36324a;
   font-weight: 500;
 }
-.header-menu ul li.active a {
+.header-menu .navbar-nav li.active a {
   color: #f77ade;
   font-weight: 400;
 }
@@ -440,7 +475,18 @@ section.app-video .play {
   color: #fff;
   background: #5b39c9;
 }
-
+.single-price-plan button:hover{
+  color: #fff;
+  background: #5b39c9;
+  border: #5b39c9 2px solid;
+}
+.single-price-plan:hover {
+  border: 4px solid #5b39c9;
+  border-radius: 10px;
+  padding: 85px 0 80px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
 /* section-author-carousel */
 .Section-author-carousel {
   background-color: #f7f6f9;
