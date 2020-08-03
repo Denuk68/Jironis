@@ -54,6 +54,12 @@ p {
   font-size: 16px;
 }
 
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 .btn-white {
   border: 2px solid #5b39c9;
   background: #fff;
@@ -143,10 +149,15 @@ p {
   color: #36324a;
   font-weight: 500;
 }
-.header-menu .navbar-nav li.active a {
+ #ul_big li a.active {
   color: #f77ade;
-  font-weight: 400;
+  font-weight: 500;
 }
+ #ul_small li a.active {
+  color: #f77ade;
+  font-weight: 700;
+}
+
 #navbarNavAltMarkup {
   position: fixed;
   left: 10%;
