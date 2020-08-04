@@ -6,6 +6,16 @@ body {
   color: #6f6c7f;
 }
 
+.disable-scrollbars::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none;  /* IE 10+ */
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -53,6 +63,7 @@ p {
   font-weight: 400;
   font-size: 16px;
 }
+
 
 button, 
 button:active, 
@@ -497,6 +508,7 @@ section.app-video .play {
   padding: 85px 0 80px;
   margin-top: -30px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 /* section-author-carousel */
 .Section-author-carousel {

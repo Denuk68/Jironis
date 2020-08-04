@@ -203,8 +203,7 @@ $(document).ready(function () {
     }, 500);
     $("#ul_small li a[href^='#']").removeClass('active');
     $(this).addClass('active')
-    return false
-    return false
+    return false   
   });
 
 });
