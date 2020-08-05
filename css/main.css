@@ -6,16 +6,6 @@ body {
   color: #6f6c7f;
 }
 
-.disable-scrollbars::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* Chrome/Safari/Webkit */
-}
-
-.disable-scrollbars {
-scrollbar-width: none; /* Firefox */
--ms-overflow-style: none;  /* IE 10+ */
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -64,7 +54,6 @@ p {
   font-size: 16px;
 }
 
-
 button, 
 button:active, 
 button:focus {
@@ -100,6 +89,8 @@ button:focus {
   border-color: #36324a;
   transition: linear 0.2s;
 }
+
+
 /* Modal */
 #myModal {
   width: 50%; height: 400px;
@@ -135,6 +126,16 @@ button:focus {
   cursor: pointer;
   display: none;
 }
+/*Form*/
+input:invalid {
+  border-radius: 20px;
+}
+input:valid {
+  border: 2px solid #f77ade;
+  border-radius: 20px;
+}
+
+
 
 /* Header */
 .main-header {

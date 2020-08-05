@@ -155,55 +155,60 @@ $(".partner-carousel").owlCarousel({
 
 // Modal button
 $(document).ready(function () {
-  $('button#myLinkModal').click(function (event) {
+  $("button#myLinkModal").click(function (event) {
     event.preventDefault();
-    $('#myOverlay').fadeIn(297, function () {
-      $('#myModal')
-        .css('display', 'block')
-        .animate({ opacity: 1 }, 198);
+    $("#myOverlay").fadeIn(297, function () {
+      $("#myModal").css("display", "block").animate({ opacity: 1 }, 198);
     });
   });
 
-  $('#myModal__close, #myOverlay').click(function () {
-    $('#myModal').animate({ opacity: 0 }, 198, function () {
-      $(this).css('display', 'none');
-      $('#myOverlay').fadeOut(297);
+  $("#myModal__close, #myOverlay").click(function () {
+    $("#myModal").animate({ opacity: 0 }, 198, function () {
+      $(this).css("display", "none");
+      $("#myOverlay").fadeOut(297);
     });
   });
 });
 
+// Mask
+$("#inputPhone").inputmask({"mask": "+380 (99) 99-99-999"});
+
+
+// Form
+
+
 // Header
-
-
 // Scroll_big
 
 $(document).ready(function () {
-  var offset = $('.main-header').innerHeight();
+  var offset = $(".main-header").innerHeight();
   $("#ul_big li a[href^='#']").click(function () {
-
-    var target = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(target).offset().top - offset
-    }, 500);
-    $("#ul_big li a[href^='#']").removeClass('active');
-    $(this).addClass('active')
-    return false
+    var target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - offset,
+      },
+      500
+    );
+    $("#ul_big li a[href^='#']").removeClass("active");
+    $(this).addClass("active");
+    return false;
   });
-
 });
 
 // Scroll_small
 $(document).ready(function () {
-  var offset = $('.main-header').innerHeight();
+  var offset = $(".main-header").innerHeight();
   $("#ul_small li a[href^='#']").click(function () {
-
-    var target = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(target).offset().top - offset
-    }, 500);
-    $("#ul_small li a[href^='#']").removeClass('active');
-    $(this).addClass('active')
-    return false   
+    var target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - offset,
+      },
+      500
+    );
+    $("#ul_small li a[href^='#']").removeClass("active");
+    $(this).addClass("active");
+    return false;
   });
-
 });
