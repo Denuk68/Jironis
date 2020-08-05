@@ -170,11 +170,11 @@ $(document).ready(function () {
   });
 });
 
+
+
+
 // Mask
 $("#inputPhone").inputmask({"mask": "+380 (99) 99-99-999"});
-
-
-// Form
 
 
 // Header
