@@ -182,10 +182,12 @@ function validateName() {
     input.style.border = "2px solid red";
     input.placeholder = "Поле обов'язкове";
     console.log("null");
+    return false;
   } else if (!name.match(pattern)) {
     input.style.border = "2px solid red";
     input.placeholder = "Некоректно введені дані";
     console.log("incorrect");
+    return false;
   } else if (name.length < 3) {
     input.style.border = "2px solid red";
     input.placeholder = "Мінімум 3 символа";
@@ -211,10 +213,12 @@ function validatePhone() {
     input.style.border = "2px solid red";
     input.placeholder = "Поле обов'язкове";
     console.log("null");
+    return false;
   } else if (!phone.match(pattern)) {
     input.style.border = "2px solid red";
     input.placeholder = "Некоректно введені дані";
     console.log("incorrect");
+    return false;
   } else {
     input.style.border = "2px solid green";
     console.log("true");
@@ -230,10 +234,12 @@ function validateEmail() {
     input.style.border = "2px solid red";
     input.placeholder = "Поле обов'язкове";
     console.log("null");
+    return false;
   } else if (!email.match(pattern)) {
     input.style.border = "2px solid red";
     input.placeholder = "Некоректно введені дані";
     console.log("incorrect");
+    return false;
   } else {
     input.style.border = "2px solid green";
     console.log("true");
