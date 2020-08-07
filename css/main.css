@@ -54,10 +54,10 @@ p {
   font-size: 16px;
 }
 
-button, 
-button:active, 
+button,
+button:active,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 .btn-white {
@@ -90,68 +90,65 @@ button:focus {
   transition: linear 0.2s;
 }
 
-
 /* Modal */
 #myModal {
-  width: 50%; height: 400px;
+  width: 50%;
+  height: 400px;
   min-width: 250px;
   padding: 18px 9px;
   border-radius: 4px;
   background: #fafafa;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
   display: none;
   opacity: 0;
   z-index: 38;
   text-align: center;
 }
-#myModal button{
+#myModal button {
   margin-top: 30px;
 }
 #myModal #myModal__close {
-  width: 21px; height: 21px;
+  width: 21px;
+  height: 21px;
   position: absolute;
   font-size: 29px;
-  top: 1px; right: 11px;
+  top: 1px;
+  right: 11px;
   cursor: pointer;
   display: block;
 }
 #myOverlay {
   z-index: 37;
   position: fixed;
-  background: rgba(0,0,0,.7);
-  width: 100%; height: 100%;
-  top: 0; left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   cursor: pointer;
   display: none;
 }
 /*Form*/
-input:invalid {
-  border: 2px solid #900;
-  border-radius: 20px;
-}
-input:focus:invalid {
-  outline: none !important;
-}
-input:valid {
-  border: 2px solid #f77ade;
+.form-group input {
   border-radius: 20px;
 }
 .error {
-  width  : 100%;
-  padding: 0; 
+  width: 100%;
+  padding: 0;
   font-size: 80%;
   color: white;
   background-color: #900;
-  border-radius: 0 0 5px 5px;  
+  border-radius: 0 0 5px 5px;
   box-sizing: border-box;
 }
 .error.active {
   padding: 0.3em;
 }
-
-
 
 /* Header */
 .main-header {
@@ -177,11 +174,11 @@ input:valid {
   color: #36324a;
   font-weight: 500;
 }
- #ul_big li a.active {
+#ul_big li a.active {
   color: #f77ade;
   font-weight: 500;
 }
- #ul_small li a.active {
+#ul_small li a.active {
   color: #f77ade;
   font-weight: 700;
 }
@@ -514,7 +511,7 @@ section.app-video .play {
   color: #fff;
   background: #5b39c9;
 }
-.single-price-plan button:hover{
+.single-price-plan button:hover {
   color: #fff;
   background: #5b39c9;
   border: #5b39c9 2px solid;
@@ -1187,10 +1184,10 @@ section.app-video .play {
   .footer-widget .footer-logo {
     margin-bottom: 20px;
   }
-  #navbarNavAltMarkup {    
-    top: 76px;   
+  #navbarNavAltMarkup {
+    top: 76px;
   }
-  .banner-area{
+  .banner-area {
     margin-top: 75px;
-  } 
+  }
 }
