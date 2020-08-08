@@ -180,27 +180,26 @@ function validateName() {
   let pattern = /^[a-zA-Zа-яА-Я]+(([',. -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
   if (name == "") {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Поле обов'язкове";
-    console.log("null");
     return false;
   } else if (!name.match(pattern)) {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Некоректно введені дані";
-    console.log("incorrect");
     return false;
   } else if (name.length < 3) {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Мінімум 3 символа";
-    console.log("min 3 symbol");
     return false;
   } else if (name.length > 25) {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Максимум 25 символів";
-    console.log("max 25 sym");
     return false;
   } else {
     input.style.border = "2px solid green";
-    console.log("true");
     return true;
   }
 }
@@ -211,17 +210,16 @@ function validatePhone() {
   let pattern = /^[+]*3?8?0?[\s][(]{1}[0-9]{2}[)]{1}[\s][0-9]{2}[-][0-9]{1,3}[-][0-9]{3}/;
   if (phone == "") {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Поле обов'язкове";
-    console.log("null");
     return false;
   } else if (!phone.match(pattern)) {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Некоректно введені дані";
-    console.log("incorrect");
     return false;
   } else {
     input.style.border = "2px solid green";
-    console.log("true");
     return true;
   }
 }
@@ -232,22 +230,25 @@ function validateEmail() {
   let pattern = /^^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
   if (email == "") {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Поле обов'язкове";
-    console.log("null");
     return false;
   } else if (!email.match(pattern)) {
     input.style.border = "2px solid red";
+    input.value = "";
     input.placeholder = "Некоректно введені дані";
-    console.log("incorrect");
+    input.style.transition = ".3s";
     return false;
   } else {
     input.style.border = "2px solid green";
-    console.log("true");
     return true;
   }
 }
 
 function checkall() {
+  validateName();
+  validatePhone();
+  validateEmail();
   if (validateName() && validatePhone() && validateEmail()) {
     return true;
   } else {

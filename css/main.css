@@ -59,6 +59,11 @@ button:active,
 button:focus {
   outline: none;
 }
+input,
+input:active,
+input:focus {
+  outline: none;
+}
 
 .btn-white {
   border: 2px solid #5b39c9;

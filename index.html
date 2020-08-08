@@ -81,20 +81,20 @@
 
   <!-- Modal-window  -->
   <div id="myModal">
-    <form action="" name="app-form" onsubmit="return checkall()">
+    <form action="" name="app-form" onsubmit="return checkall()" method="POST">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control" name="name" id="inputName" onblur="validateName()">
       </div>
       <div class="form-group">
-        <label for="phone">Phone number</label>
-        <input type="text" class="form-control" name="phone" id="inputPhone" onblur="validatePhone()">
-      </div>
-      <div class="form-group">
         <label for="mail">Email address</label>
         <input type="text" class="form-control" name="email" id="inputEmail" onblur="validateEmail()">
       </div>
-      <button type="submit" class="btn btn-primary btn-rose">Submit an application
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="text" class="form-control" name="phone" id="inputPhone" onblur="validatePhone()">
+      </div>
+      <button type="submit" class="btn btn-primary btn-rose" id="submit_button">Submit an application
       </button>
     </form>
     <span id="myModal__close" class="close">ₓ</span>
@@ -908,10 +908,6 @@
     </div>
   </footer>
   <!-- Footer -->
-
-
-
-
 
 
 
