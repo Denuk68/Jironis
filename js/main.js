@@ -237,19 +237,27 @@ function validateEmail() {
     input.style.border = "2px solid red";
     input.value = "";
     input.placeholder = "Некоректно введені дані";
-    input.style.transition = ".3s";
+    input.onfocus = function () {
+      input.placeholder = "";
+      input.value = email;
+    };
     return false;
   } else {
     input.style.border = "2px solid green";
+    input.onfocus = function () {
+      input.placeholder = "";
+      input.value = email;
+    };
     return true;
   }
 }
+
 
 function checkall() {
   validateName();
   validatePhone();
   validateEmail();
-  if (validateName() && validatePhone() && validateEmail()) {
+  if (validateName() && validatePhone() && validateEmail() == true) {
     return true;
   } else {
     return false;
