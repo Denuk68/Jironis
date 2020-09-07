@@ -1,3 +1,39 @@
+// Header
+
+// Scroll_big
+$(document).ready(function () {
+  var offset = $(".main-header").innerHeight();
+  $("#ul_big li a[href^='#']").click(function () {
+    var target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - offset,
+      },
+      500
+    );
+    $("#ul_big li a[href^='#']").removeClass("active");
+    $(this).addClass("active");
+    return false;
+  });
+});
+
+// Scroll_small
+$(document).ready(function () {
+  var offset = $(".main-header").innerHeight();
+  $("#ul_small li a[href^='#']").click(function () {
+    var target = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - offset,
+      },
+      500
+    );
+    $("#ul_small li a[href^='#']").removeClass("active");
+    $(this).addClass("active");
+    return false;
+  });
+});
+
 // Carousel
 $(".feature-carousel").owlCarousel({
   loop: true,
@@ -128,7 +164,7 @@ $(".author-comment-carousel .owl-prev").on("click", function () {
   $(".author-carousel .owl-prev").click();
 });
 
-//  Pzerner-carousel
+//  Partner-carousel
 $(".partner-carousel").owlCarousel({
   loop: true,
   margin: 20,
@@ -152,6 +188,7 @@ $(".partner-carousel").owlCarousel({
     },
   },
 });
+
 
 // Modal button
 $(document).ready(function () {
@@ -252,50 +289,16 @@ function validateEmail() {
   }
 }
 
-
 function checkall() {
   validateName();
   validatePhone();
   validateEmail();
-  if (validateName() && validatePhone() && validateEmail() == true) {
+  if (validateName() && validatePhone() && validateEmail() == true) {    
     return true;
   } else {
     return false;
   }
 }
 
-// Header
-// Scroll_big
 
-$(document).ready(function () {
-  var offset = $(".main-header").innerHeight();
-  $("#ul_big li a[href^='#']").click(function () {
-    var target = $(this).attr("href");
-    $("html, body").animate(
-      {
-        scrollTop: $(target).offset().top - offset,
-      },
-      500
-    );
-    $("#ul_big li a[href^='#']").removeClass("active");
-    $(this).addClass("active");
-    return false;
-  });
-});
 
-// Scroll_small
-$(document).ready(function () {
-  var offset = $(".main-header").innerHeight();
-  $("#ul_small li a[href^='#']").click(function () {
-    var target = $(this).attr("href");
-    $("html, body").animate(
-      {
-        scrollTop: $(target).offset().top - offset,
-      },
-      500
-    );
-    $("#ul_small li a[href^='#']").removeClass("active");
-    $(this).addClass("active");
-    return false;
-  });
-});
